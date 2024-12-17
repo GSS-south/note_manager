@@ -5,4 +5,4 @@ temp_issue_date = issue_date [0:5]
 print("Created date:", created_date)
 print("Issue date:", issue_date)
 print("Temp created date:", temp_created_date)
-print("Temr issue date:", temp_issue_date)
+print("Temp issue date:", temp_issue_date)
