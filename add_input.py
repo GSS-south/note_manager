@@ -1,0 +1,6 @@
+username = input("GSS_south")
+title = input ("Grade 1")
+content = input("Stage 1")
+status = input("Task 1")
+created_date = input("17.12.2024")
+issue_date = input("17.01.2025")
