@@ -7,8 +7,8 @@ issue_date = input ('Введите дату завершения заметки
 changed_date = input('Введите дату изменения заметки в формате "дд-мм-гггг" ')
 temp_created_date = created_date [0:5]
 temp_issue_date = issue_date [0:5]
-title_1 = input("Grade 1")
-title_2 = input("Grade 2")
+title_1 = input("Введите заголовок 1 ")
+title_2 = input("Введите заголовок 2 ")
 titles = [title_1, title_2,]
 
 note = [  "Имя пользователя: ", username,
