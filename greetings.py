@@ -1,7 +1,7 @@
-username = "GSS-south"
-title = "Grade 1"
-content = "Stage 1"
-status = "Task 1"
+username = "Имя пользователя"
+title = "Заголовок заметки"
+content = "Содержание заметки"
+status = "Статус"
 created_date = "17.12.2024"
 issue_date = "17.01.2025"
 print("Имя пользователя: ", username)
