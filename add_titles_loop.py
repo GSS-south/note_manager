@@ -1,20 +1,20 @@
 # Список заголовков
-titles_ = []
+titles = []
 # Цикл для введения заголовков
 while True:
     title = input("Введите заголовок ")
     print("Нажмите 'Enter', что бы закончить ")
-    titles_.append(title)
+    titles.append(title)
 # Условие для завершения
     if title == "":
         break
 # Убираем пустое значение
-titles_.remove("")
+titles.remove("")
 # Определяем уникальность
-titl = set(titles_)
-if titles_ == titl:
+titl = set(titles)
+if titles == titl:
     print("Все заголовки уникальны")
 else:
     print("Есть одинаковые заголовки")
-print(titles_)
+print(titles)
 
