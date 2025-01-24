@@ -199,19 +199,24 @@ def delete_note():
         i = input("Желаете удалить заметку? да/нет: ")
         if i in ["нет"]:
             print("Ваши заметки:")
-            break
+            return menu()
         elif i in ["да"]:
             print("Хорошо.")
             deleted_note = input("\nВведите имя пользователя или заголовок для удаления заметки: ")
-            for note in range(0, len(notes)):
-                if (deleted_note.lower() == notes[note]['Имя пользователя'].lower()
-                        or deleted_note.lower() == notes[note]['Заголовок'].lower()):
-                    notes.pop(note)
-                    print('\nОставшиеся заметки:')
-                    display_notes(notes)
-                    break
-                else:
-                    print("Заметка не найдена, попробуйте снова.")
+            i = input("Желаете удалить именно эту заметку? да/нет: ")
+            if i in ["нет"]:
+                print("Ваши заметки:")
+                return menu()
+            elif i in ["да"]:
+                for note in range(0, len(notes)):
+                    if (deleted_note.lower() == notes[note]['Имя пользователя'].lower()
+                            or deleted_note.lower() == notes[note]['Заголовок'].lower()):
+                        notes.pop(note)
+                        print('\nОставшиеся заметки:')
+                        display_notes(notes)
+                        break
+                    else:
+                        print("Заметка не найдена, попробуйте снова.")
         else:
             print("Некорректный ответ, попробуйте снова: ")
     display_notes(notes)
