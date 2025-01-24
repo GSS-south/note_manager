@@ -1,6 +1,6 @@
 # Цветовая библиотека
 from colorama import *
-init(autoreset=True)
+init(autoreset = True)
 # Библиотека datetime
 import datetime
 # Импорт функции islice из модуля itertools в Python
