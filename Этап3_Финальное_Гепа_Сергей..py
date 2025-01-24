@@ -219,10 +219,10 @@ def delete_note():
                         print("Заметка не найдена, попробуйте снова.")
         else:
             print("Некорректный ответ, попробуйте снова: ")
-    display_notes(notes)
+        display_notes(notes)
     # Проверка на наполненность списка, при отсутсвии заметок выводится соответствующее сообщение
-    if len(notes) == 0:
-        print("Заметок больше не осталось.")
+        if len(notes) == 0:
+            print("Заметок больше не осталось.")
 
 # Функция для поиска заметок
 def search_notes_(notes, keyword = None, status = None):
