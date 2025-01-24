@@ -223,6 +223,7 @@ def delete_note():
     # Проверка на наполненность списка, при отсутсвии заметок выводится соответствующее сообщение
         if len(notes) == 0:
             print("Заметок больше не осталось.")
+        return menu()
 
 # Функция для поиска заметок
 def search_notes_(notes, keyword = None, status = None):
