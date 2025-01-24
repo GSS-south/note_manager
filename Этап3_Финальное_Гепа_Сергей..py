@@ -75,9 +75,12 @@ def create_note():
               'Статус': status,
               'Дата создания': create_date,
               'Дедлайн': issue_date}
-    print("Заметка создана: ", note)
+    print("Заметка создана: ", print_params(**note))
     return note
 
+def print_params(**kwargs):
+    for key, val in kwargs.items():
+        print(key, ':', val)
 # Функция для отображения заметок и уникального номера начиная с 1
 def print_notes():
     itr = 1
@@ -199,7 +202,7 @@ def delete_note():
         i = input("Желаете удалить заметку? да/нет: ")
         if i in ["нет"]:
             print("Ваши заметки:")
-            return menu()
+            return
         elif i in ["да"]:
             print("Хорошо.")
             deleted_note = input("\nВведите имя пользователя или заголовок для удаления заметки: ")
@@ -217,9 +220,12 @@ def delete_note():
                         break
                     else:
                         print("Заметка не найдена, попробуйте снова.")
+            else:
+                print('Не корректный ответ, попробуйте снова.')
+                return delete_note()
         else:
             print("Некорректный ответ, попробуйте снова: ")
-        display_notes(notes)
+            return delete_note()
     # Проверка на наполненность списка, при отсутсвии заметок выводится соответствующее сообщение
         if len(notes) == 0:
             print("Заметок больше не осталось.")
