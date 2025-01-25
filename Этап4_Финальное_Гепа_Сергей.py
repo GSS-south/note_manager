@@ -1,6 +1,6 @@
 # Импорт модуля
 import json
-# Заметка
+# Заметка json
 note = [
             {
             "username": "Алексей",
@@ -15,7 +15,7 @@ note = [
 notes = [{'username': 'Алексей', 'title': 'Список покупок', 'content': 'Купить продукты на неделю',
            'status': 'новая', 'created_date': '27-11-2024', 'issue_date': '30-11-2024'}]
 
-
+# Заметка для добавления python/txt
 new_notes = [{"username": "Мария",
               "title": "План работы",
               "content": "Подготовить отчёт",
